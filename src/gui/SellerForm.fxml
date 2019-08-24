@@ -33,20 +33,7 @@
          <children>
             <Label layoutX="107.0" layoutY="22.0" text="Name" GridPane.rowIndex="1" />
             <Label text="Id" />
-            <TextField fx:id="txtId" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <TextField fx:id="txtName" prefHeight="20.0" prefWidth="177.0" GridPane.columnIndex="1" />
-            <Label fx:id="labelErrorName" GridPane.columnIndex="2">
-               <textFill>
-                  <RadialGradient centerX="0.5" centerY="0.5" proportional="false" radius="0.5">
-                     <stops>
-                        <Stop color="RED" />
-                        <Stop color="BLACK" offset="0.845360824742268" />
-                        <Stop color="RED" offset="0.8831615120274914" />
-                        <Stop color="RED" offset="1.0" />
-                     </stops>
-                  </RadialGradient>
-               </textFill>
-            </Label>
+            <TextField fx:id="txtId" editable="false" prefHeight="20.0" prefWidth="177.0" GridPane.columnIndex="1" />
             <HBox prefHeight="46.0" prefWidth="174.0" spacing="5.0" GridPane.columnIndex="1" GridPane.rowIndex="6">
                <children>
                   <Button fx:id="btnSave" mnemonicParsing="false" onAction="#onBtnSaveAction" text="Save" />
@@ -60,10 +47,23 @@
             <TextField fx:id="txtEmail" GridPane.columnIndex="1" GridPane.rowIndex="2" />
             <TextField fx:id="txtBaseSalary" GridPane.columnIndex="1" GridPane.rowIndex="4" />
             <DatePicker fx:id="dtBirthDate" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label fx:id="labelErrorName" prefHeight="17.0" prefWidth="152.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <textFill>
+                  <RadialGradient centerX="0.5" centerY="0.5" proportional="false" radius="0.5">
+                     <stops>
+                        <Stop color="RED" />
+                        <Stop color="BLACK" offset="0.845360824742268" />
+                        <Stop color="RED" offset="0.8831615120274914" />
+                        <Stop color="RED" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+            </Label>
             <Label fx:id="labelErrorEmail" textFill="RED" GridPane.columnIndex="2" GridPane.rowIndex="2" />
             <Label fx:id="labelErrorBaseSalary" textFill="RED" GridPane.columnIndex="2" GridPane.rowIndex="4" />
             <Label fx:id="labelErrorBirthDate" textFill="RED" GridPane.columnIndex="2" GridPane.rowIndex="3" />
             <ComboBox fx:id="comboBoxDepartment" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <TextField fx:id="txtName" GridPane.columnIndex="1" GridPane.rowIndex="1" />
          </children>
       </GridPane>
    </children>
